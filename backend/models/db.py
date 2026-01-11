@@ -70,6 +70,8 @@ SyncSessionLocal = sessionmaker(
 async def init_db() -> None:
     """Initialize database tables (async)."""
     async with async_engine.begin() as conn:
+        # Enable pgvector extension (required for embeddings)
+        await conn.execute(text("CREATE EXTENSION IF NOT EXISTS vector"))
         await conn.run_sync(Base.metadata.create_all)
 
 
