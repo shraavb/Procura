@@ -1,0 +1,87 @@
+[
+  {
+    "po_number": "PO-2024-001",
+    "supplier_code": "DK",
+    "status": "approved",
+    "total": 1245.80,
+    "currency": "USD",
+    "notes": "Initial production run for IoT Sensor Board project",
+    "items": [
+      {"part_number": "STM32F407VGT6", "quantity": 50, "unit_price": 12.50, "line_total": 625.00},
+      {"part_number": "ESP32-WROOM-32E", "quantity": 50, "unit_price": 3.20, "line_total": 160.00},
+      {"part_number": "BME280", "quantity": 50, "unit_price": 4.50, "line_total": 225.00},
+      {"part_number": "USB4110-GF-A", "quantity": 50, "unit_price": 1.25, "line_total": 62.50},
+      {"part_number": "LM4029PS", "quantity": 50, "unit_price": 8.50, "line_total": 425.00}
+    ],
+    "created_at": "2024-01-15T10:30:00Z",
+    "approved_at": "2024-01-15T14:22:00Z",
+    "approved_by": "procurement_manager"
+  },
+  {
+    "po_number": "PO-2024-002",
+    "supplier_code": "MOU",
+    "status": "approved",
+    "total": 892.50,
+    "currency": "USD",
+    "notes": "Passive components for Q1 production",
+    "items": [
+      {"part_number": "RC0603FR-0710KL", "quantity": 5000, "unit_price": 0.08, "line_total": 400.00},
+      {"part_number": "GRM188R71H104KA93D", "quantity": 3000, "unit_price": 0.12, "line_total": 360.00},
+      {"part_number": "BLM18PG221SN1D", "quantity": 1000, "unit_price": 0.07, "line_total": 70.00},
+      {"part_number": "SN74LVC1G14", "quantity": 200, "unit_price": 0.32, "line_total": 64.00}
+    ],
+    "created_at": "2024-01-18T09:15:00Z",
+    "approved_at": "2024-01-18T11:45:00Z",
+    "approved_by": "procurement_manager"
+  },
+  {
+    "po_number": "PO-2024-003",
+    "supplier_code": "DK",
+    "status": "pending",
+    "total": 15680.00,
+    "currency": "USD",
+    "notes": "Motor controller production order - requires approval",
+    "items": [
+      {"part_number": "STM32G431RBT6", "quantity": 500, "unit_price": 6.85, "line_total": 3425.00},
+      {"part_number": "DRV8323RSRGZR", "quantity": 500, "unit_price": 4.25, "line_total": 2125.00},
+      {"part_number": "CSD19536KCS", "quantity": 3000, "unit_price": 3.85, "line_total": 11550.00}
+    ],
+    "created_at": "2024-01-22T08:00:00Z",
+    "approved_at": null,
+    "approved_by": null,
+    "approval_required_reason": "Order exceeds $10,000 threshold"
+  },
+  {
+    "po_number": "PO-2024-004",
+    "supplier_code": "ARR",
+    "status": "sent",
+    "total": 3540.00,
+    "currency": "USD",
+    "notes": "Industrial PLC components",
+    "items": [
+      {"part_number": "STM32H743ZIT6", "quantity": 100, "unit_price": 18.00, "line_total": 1800.00},
+      {"part_number": "ILI9341", "quantity": 100, "unit_price": 11.80, "line_total": 1180.00},
+      {"part_number": "LM4029PH", "quantity": 20, "unit_price": 42.50, "line_total": 850.00}
+    ],
+    "created_at": "2024-01-20T14:00:00Z",
+    "approved_at": "2024-01-20T16:30:00Z",
+    "approved_by": "procurement_manager",
+    "sent_at": "2024-01-21T09:00:00Z"
+  },
+  {
+    "po_number": "PO-2024-005",
+    "supplier_code": "MOU",
+    "status": "draft",
+    "total": 2847.50,
+    "currency": "USD",
+    "notes": "Smart thermostat prototype components",
+    "items": [
+      {"part_number": "ESP32-S3-WROOM-1-N8R8", "quantity": 25, "unit_price": 4.25, "line_total": 106.25},
+      {"part_number": "BME680", "quantity": 25, "unit_price": 11.50, "line_total": 287.50},
+      {"part_number": "ACS712ELCTR-20A-T", "quantity": 100, "unit_price": 4.95, "line_total": 495.00}
+    ],
+    "created_at": "2024-01-23T11:00:00Z",
+    "approved_at": null,
+    "approved_by": null
+  }
+]

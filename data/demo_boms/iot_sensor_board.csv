@@ -1,0 +1,15 @@
+Line,Part Number,Description,Quantity,Unit,Reference Designators,Notes
+1,STM32F407VGT6,ARM Cortex-M4 Microcontroller 168MHz,1,EA,U1,Main processor
+2,RC0603FR-0710KL,10K Ohm Resistor 1% 0603,25,EA,"R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25",Pull-up/pull-down
+3,GRM188R71H104KA93D,100nF Ceramic Capacitor 0603,30,EA,C1-C30,Decoupling caps
+4,USB4110-GF-A,USB Type-C Connector,1,EA,J1,Programming/power
+5,SN74LVC1G14,Single Schmitt Inverter SOT-23-5,4,EA,"U2,U3,U4,U5",Level shifting
+6,BLM18PG221SN1D,Ferrite Bead 220 Ohm 0603,6,EA,"FB1,FB2,FB3,FB4,FB5,FB6",EMI filtering
+7,LM4029PS,5V 2A DC-DC Power Module,1,EA,U6,Power supply
+8,LM4029MC,4MB SPI Flash Memory,1,EA,U7,Data storage
+9,BME280,Environmental Sensor Module,1,EA,U8,Temp/humidity/pressure
+10,ESP32-WROOM-32E,WiFi/BT Module,1,EA,U9,Wireless connectivity
+11,AMS1117-3.3,3.3V LDO Regulator SOT-223,2,EA,"U10,U11",Voltage regulation
+12,LED0603-RED,Red LED 0603,4,EA,"D1,D2,D3,D4",Status indicators
+13,CSTCE16M0V53-R0,16MHz Crystal SMD,1,EA,Y1,MCU clock
+14,BAT54S,Dual Schottky Diode SOT-23,2,EA,"D5,D6",ESD protection

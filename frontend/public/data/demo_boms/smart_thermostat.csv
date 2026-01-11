@@ -1,0 +1,19 @@
+Item,MPN,Name,Quantity,Unit,Reference,Category
+1,ESP32-S3-WROOM-1-N8R8,ESP32-S3 WiFi/BLE Module 8MB,1,EA,U1,Microcontroller
+2,ILI9341,2.4" TFT LCD Display Module,1,EA,LCD1,Display
+3,BME680,Gas/Humidity/Pressure Sensor,1,EA,U2,Sensor
+4,SHTC3,Digital Humidity and Temp Sensor,1,EA,U3,Sensor
+5,RC0402FR-0710KL,10K Resistor 0402 1%,20,EA,R1-R20,Passive
+6,CC0402KRX7R9BB104,100nF Capacitor 0402,25,EA,C1-C25,Passive
+7,USB-C-SMD-16PIN,USB-C Receptacle 16-Pin,1,EA,J1,Connector
+8,CP2102N-A02-GQFN28,USB-UART Bridge,1,EA,U4,Interface IC
+9,TPS63001DRCR,Buck-Boost Converter 1.8A,1,EA,U5,Power
+10,LIS2DH12TR,3-Axis Accelerometer,1,EA,U6,Sensor
+11,SPH0645LM4H-B,Digital MEMS Microphone,1,EA,MIC1,Audio
+12,PAM8302AASCR,2.5W Class D Audio Amp,1,EA,U7,Audio
+13,SK6812MINI-E,Addressable RGB LED 3535,4,EA,LED1-LED4,Indicator
+14,PTS645SM43SMTR92,Tactile Switch 6mm,3,EA,SW1-SW3,Mechanical
+15,EC11E18244A5,Rotary Encoder with Switch,1,EA,ENC1,Mechanical
+16,CR2032-BS-6-1,CR2032 Battery Holder,1,EA,BT1,Power
+17,AP2112K-3.3TRG1,3.3V LDO 600mA SOT-23-5,1,EA,U8,Power
+18,SML-D12M8WT86,Green LED 0603,2,EA,D1-D2,Indicator

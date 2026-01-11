@@ -1,0 +1,21 @@
+Line Item,Manufacturer Part Number,Component Description,Required Qty,UOM,Ref Des,Supplier Preference,Lead Time Requirement
+1,STM32H743ZIT6,ARM Cortex-M7 MCU 480MHz 2MB Flash,1,EACH,U1,Digi-Key,Standard
+2,W25Q256JVEIQ,256Mbit Quad SPI Flash,1,EACH,U2,Mouser,Standard
+3,IS42S32160J-7TLI,32MB SDRAM 143MHz,1,EACH,U3,Arrow,Extended
+4,LAN8742A-CZ-TR,10/100 Ethernet PHY,1,EACH,U4,Digi-Key,Standard
+5,DP83825IRMQR,Industrial Ethernet PHY,1,EACH,U5,Digi-Key,Standard
+6,MAX485ESA+T,RS-485 Transceiver,4,EACH,U6-U9,Mouser,Standard
+7,ADM2587EBRWZ,Isolated RS-485 2.5kV,2,EACH,U10-U11,Digi-Key,Extended
+8,TPS2378DDCR,PoE Interface PD Controller,1,EACH,U12,Mouser,Standard
+9,LMZ23610TZ,10A Switching Regulator Module,1,EACH,U13,TI Direct,Extended
+10,TPS54540DDAR,5A Synchronous Buck Regulator,2,EACH,U14-U15,Digi-Key,Standard
+11,REF3030AIDBZR,3.0V Precision Voltage Reference,1,EACH,U16,Mouser,Standard
+12,ADS1256IDBR,24-Bit 8-Ch ADC,1,EACH,U17,Digi-Key,Extended
+13,MCP4728-E/UN,12-Bit Quad DAC I2C,1,EACH,U18,Mouser,Standard
+14,TXB0108PWR,8-Bit Level Shifter,4,EACH,U19-U22,Digi-Key,Standard
+15,SN65HVD230DR,CAN Transceiver,2,EACH,U23-U24,Mouser,Standard
+16,RJ45-8P8C-SHLD,Shielded RJ45 Connector,2,EACH,J1-J2,Newark,Standard
+17,DB9-MALE-RA,DB9 Male Right Angle,2,EACH,J3-J4,Newark,Standard
+18,XAL7030-222MEB,2.2uH Shielded Inductor 15A,2,EACH,L1-L2,Digi-Key,Standard
+19,C3216X7R2A105K160AB,1uF 100V X7R 1206,30,EACH,C1-C30,Murata Direct,Standard
+20,GRM32ER71H106KA12L,10uF 50V X7R 1210,10,EACH,C31-C40,Mouser,Standard

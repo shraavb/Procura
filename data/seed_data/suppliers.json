@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Digi-Key Electronics",
+    "code": "DK",
+    "description": "Leading global electronic component distributor. Specializes in semiconductors, passives, connectors, and electromechanical components. Fast shipping with extensive inventory.",
+    "contact_email": "sales@digikey.com",
+    "contact_phone": "+1-800-344-4539",
+    "lead_time_days": 3,
+    "capabilities": ["Semiconductors", "Passives", "Connectors", "Electromechanical"],
+    "certifications": ["ISO 9001", "ISO 14001", "AS9120"]
+  },
+  {
+    "name": "Mouser Electronics",
+    "code": "MOU",
+    "description": "Global authorized distributor of semiconductors and electronic components. Wide selection of development tools and embedded solutions.",
+    "contact_email": "sales@mouser.com",
+    "contact_phone": "+1-800-346-6873",
+    "lead_time_days": 2,
+    "capabilities": ["Semiconductors", "Development Boards", "Sensors", "Power Management"],
+    "certifications": ["ISO 9001", "AS9120", "ANSI/ESD S20.20"]
+  },
+  {
+    "name": "Arrow Electronics",
+    "code": "ARR",
+    "description": "Global provider of products, services, and solutions to industrial and commercial users of electronic components and enterprise computing solutions.",
+    "contact_email": "contact@arrow.com",
+    "contact_phone": "+1-800-777-2776",
+    "lead_time_days": 5,
+    "capabilities": ["Industrial Components", "Computing Solutions", "IoT", "Lighting"],
+    "certifications": ["ISO 9001", "ISO 14001"]
+  },
+  {
+    "name": "Newark Electronics",
+    "code": "NEW",
+    "description": "High-service distributor of technology products, services and solutions for electronic system design, maintenance and repair.",
+    "contact_email": "order@newark.com",
+    "contact_phone": "+1-800-463-9275",
+    "lead_time_days": 4,
+    "capabilities": ["Test Equipment", "Tools", "Automation", "Safety"],
+    "certifications": ["ISO 9001"]
+  },
+  {
+    "name": "RS Components",
+    "code": "RS",
+    "description": "Global distributor of electronic, electrical and industrial components. Strong in automation, control and MRO products.",
+    "contact_email": "sales@rs-components.com",
+    "contact_phone": "+1-866-433-5722",
+    "lead_time_days": 7,
+    "capabilities": ["Automation", "Control Systems", "MRO", "Pneumatics"],
+    "certifications": ["ISO 9001", "ISO 14001", "OHSAS 18001"]
+  },
+  {
+    "name": "Future Electronics",
+    "code": "FUT",
+    "description": "Global leading distributor of electronic components. Strong relationships with major semiconductor manufacturers.",
+    "contact_email": "info@futureelectronics.com",
+    "contact_phone": "+1-800-388-8731",
+    "lead_time_days": 4,
+    "capabilities": ["Semiconductors", "Interconnect", "Passives", "Displays"],
+    "certifications": ["ISO 9001", "ISO 14001", "IATF 16949"]
+  },
+  {
+    "name": "TTI Inc",
+    "code": "TTI",
+    "description": "Specialty distributor of passive, connector, electromechanical and discrete components. Focus on authorized distribution.",
+    "contact_email": "sales@ttiinc.com",
+    "contact_phone": "+1-800-284-4844",
+    "lead_time_days": 3,
+    "capabilities": ["Passives", "Connectors", "Relays", "Switches"],
+    "certifications": ["ISO 9001", "AS9120", "IATF 16949"]
+  },
+  {
+    "name": "Avnet",
+    "code": "AVN",
+    "description": "Global technology solutions company and one of the largest distributors of electronic components and embedded solutions.",
+    "contact_email": "contact@avnet.com",
+    "contact_phone": "+1-800-332-8638",
+    "lead_time_days": 5,
+    "capabilities": ["Embedded Solutions", "Single Board Computers", "IoT", "AI Accelerators"],
+    "certifications": ["ISO 9001", "ISO 14001", "AS9100"]
+  },
+  {
+    "name": "TE Connectivity",
+    "code": "TE",
+    "description": "Global industrial technology leader creating a safer, sustainable, productive, and connected future. Specializes in connectors, sensors, and antennas.",
+    "contact_email": "sales@te.com",
+    "contact_phone": "+1-800-522-6752",
+    "lead_time_days": 4,
+    "capabilities": ["Connectors", "Sensors", "Antennas", "Relays", "Wire & Cable"],
+    "certifications": ["ISO 9001", "ISO 14001", "IATF 16949", "AS9100"]
+  }
+]

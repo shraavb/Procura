@@ -1,0 +1,56 @@
+databases:
+  - name: procura-db
+    plan: free
+    databaseName: procura
+    user: procura
+    postgresMajorVersion: 16
+    ipAllowList: []
+
+services:
+  # Backend API
+  - type: web
+    name: procura-backend
+    plan: free
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: procura-db
+          property: connectionString
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: LANGSMITH_API_KEY
+        sync: false
+      - key: LANGSMITH_PROJECT
+        value: procura
+      - key: LANGSMITH_TRACING
+        value: "true"
+      - key: ENVIRONMENT
+        value: production
+      - key: DEBUG
+        value: "false"
+      - key: DEMO_MODE
+        value: "true"
+      - key: PO_APPROVAL_THRESHOLD
+        value: "10000"
+      - key: CORS_ORIGINS
+        value: '["https://procura-frontend.onrender.com"]'
+
+  # Frontend
+  - type: web
+    name: procura-frontend
+    plan: free
+    runtime: docker
+    dockerfilePath: ./frontend/Dockerfile
+    dockerContext: ./frontend
+    envVars:
+      - key: BACKEND_URL
+        fromService:
+          name: procura-backend
+          type: web
+          envVarKey: RENDER_EXTERNAL_URL

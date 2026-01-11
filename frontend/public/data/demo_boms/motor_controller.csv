@@ -1,0 +1,16 @@
+Line,Part Number,Description,Qty,UoM,Designator,Manufacturer,Notes
+1,STM32G431RBT6,Cortex-M4 MCU with Motor Control,1,EA,U1,STMicroelectronics,Main controller
+2,DRV8323RSRGZR,Three-Phase Gate Driver,1,EA,U2,Texas Instruments,Motor driver
+3,CSD19536KCS,N-Channel MOSFET 100V 100A,6,EA,Q1-Q6,Texas Instruments,Power stage
+4,RC0805FR-07100RL,100 Ohm Resistor 0805,12,EA,R1-R12,Yageo,Gate resistors
+5,RC0805FR-0747KL,47K Ohm Resistor 0805,8,EA,R13-R20,Yageo,Bias resistors
+6,GRM21BR71H105KA12L,1uF Capacitor 50V 0805,20,EA,C1-C20,Murata,Decoupling
+7,EEE-FK1V101P,100uF Electrolytic 35V,4,EA,C21-C24,Panasonic,Bulk capacitance
+8,CRCW08052K20FKEA,2.2K Ohm Resistor 0805,6,EA,R21-R26,Vishay,Current sense
+9,ACS712ELCTR-20A-T,Current Sensor 20A,3,EA,U3-U5,Allegro,Phase current sensing
+10,ISO7741FQDWRQ1,Digital Isolator,2,EA,U6-U7,Texas Instruments,Signal isolation
+11,LM5164DDAR,DC-DC Converter 4-100V,1,EA,U8,Texas Instruments,Gate driver supply
+12,TLP290-4,Quad Optocoupler,1,EA,U9,Toshiba,Feedback isolation
+13,0603WAF1002T5E,10K Thermistor 0603,2,EA,RT1-RT2,UniOhm,Temperature sensing
+14,SRR1260-100M,10uH Power Inductor,1,EA,L1,Bourns,Buck converter
+15,B57471V2103J062,10K NTC Thermistor,1,EA,RT3,EPCOS,Motor temp sensing
