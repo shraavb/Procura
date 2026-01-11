@@ -7,7 +7,7 @@ from pathlib import Path
 from decimal import Decimal
 
 from models.db import get_sync_db_context, init_db_sync
-from models.database import Organization, Supplier, Part, SupplierPart
+from models.database import Organization, Supplier, Part, SupplierPart, BOM, BOMItem, PurchaseOrder, POItem
 from services.embedding import get_embedding_service
 from config import get_settings
 
@@ -159,10 +159,112 @@ def seed_database():
 
                 db.commit()
 
+        # Load and seed BOMs
+        boms_file = data_dir / "demo_boms.json"
+        boms_count = 0
+        if boms_file.exists():
+            with open(boms_file) as f:
+                boms_data = json.load(f)
+
+            for b_data in boms_data:
+                # Check if exists
+                existing = db.query(BOM).filter(
+                    BOM.organization_id == org.id,
+                    BOM.name == b_data["name"]
+                ).first()
+
+                if existing:
+                    print(f"BOM already exists: {b_data['name']}")
+                    continue
+
+                bom = BOM(
+                    organization_id=org.id,
+                    name=b_data["name"],
+                    description=b_data.get("description"),
+                    status=b_data.get("status", "draft"),
+                    processing_status=b_data.get("processing_status", "pending"),
+                    total_items=b_data.get("total_items", 0),
+                    matched_items=b_data.get("matched_items", 0),
+                    total_cost=Decimal(str(b_data["total_cost"])) if b_data.get("total_cost") else None,
+                )
+                db.add(bom)
+                db.commit()
+                db.refresh(bom)
+                boms_count += 1
+                print(f"Created BOM: {bom.name}")
+
+                # Add BOM items
+                for item_data in b_data.get("items", []):
+                    bom_item = BOMItem(
+                        bom_id=bom.id,
+                        line_number=item_data["line_number"],
+                        part_number_raw=item_data.get("part_number_raw"),
+                        description_raw=item_data.get("description_raw"),
+                        quantity=Decimal(str(item_data.get("quantity", 1))),
+                        status=item_data.get("status", "pending"),
+                        match_confidence=Decimal(str(item_data["match_confidence"])) if item_data.get("match_confidence") else None,
+                    )
+                    db.add(bom_item)
+                db.commit()
+
+        # Load and seed Purchase Orders
+        pos_file = data_dir / "demo_purchase_orders.json"
+        pos_count = 0
+        if pos_file.exists():
+            with open(pos_file) as f:
+                pos_data = json.load(f)
+
+            for po_data in pos_data:
+                # Check if exists
+                existing = db.query(PurchaseOrder).filter(
+                    PurchaseOrder.po_number == po_data["po_number"]
+                ).first()
+
+                if existing:
+                    print(f"PO already exists: {po_data['po_number']}")
+                    continue
+
+                # Find supplier
+                supplier = supplier_map.get(po_data["supplier_code"])
+                if not supplier:
+                    print(f"Warning: Supplier {po_data['supplier_code']} not found for PO {po_data['po_number']}")
+                    continue
+
+                po = PurchaseOrder(
+                    organization_id=org.id,
+                    po_number=po_data["po_number"],
+                    supplier_id=supplier.id,
+                    status=po_data.get("status", "draft"),
+                    total=Decimal(str(po_data["total"])) if po_data.get("total") else None,
+                    currency=po_data.get("currency", "USD"),
+                    notes=po_data.get("notes"),
+                    requires_approval=po_data.get("status") == "pending",
+                )
+                db.add(po)
+                db.commit()
+                db.refresh(po)
+                pos_count += 1
+                print(f"Created PO: {po.po_number}")
+
+                # Add PO items
+                for idx, item_data in enumerate(po_data.get("items", []), 1):
+                    po_item = POItem(
+                        po_id=po.id,
+                        line_number=idx,
+                        part_number=item_data.get("part_number"),
+                        quantity=Decimal(str(item_data.get("quantity", 1))),
+                        unit_price=Decimal(str(item_data["unit_price"])) if item_data.get("unit_price") else None,
+                        extended_price=Decimal(str(item_data["line_total"])) if item_data.get("line_total") else None,
+                    )
+                    db.add(po_item)
+                db.commit()
+
     print("\nDatabase seeding complete!")
     print(f"- Organization: Demo Organization")
     print(f"- Suppliers: {len(suppliers_data) if 'suppliers_data' in dir() else 0}")
     print(f"- Parts: {len(parts_data) if 'parts_data' in dir() else 0}")
+    print(f"- BOMs: {boms_count}")
+    print(f"- Purchase Orders: {pos_count}")
 
 
 if __name__ == "__main__":
