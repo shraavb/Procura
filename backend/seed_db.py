@@ -19,7 +19,21 @@ def seed_database():
     print("Initializing database...")
     init_db_sync()
 
-    data_dir = Path("/data/seed_data")
+    # Look for seed data in multiple locations
+    possible_paths = [
+        Path(__file__).parent / "seed_data",  # Backend directory (Docker)
+        Path("/data/seed_data"),              # Mounted volume (docker-compose)
+        Path("seed_data"),                    # Current directory
+    ]
+    data_dir = None
+    for path in possible_paths:
+        if path.exists():
+            data_dir = path
+            break
+
+    if not data_dir:
+        print("Warning: seed_data directory not found!")
+        return
 
     with get_sync_db_context() as db:
         # Create demo organization

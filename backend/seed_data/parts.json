@@ -1,0 +1,112 @@
+[
+  {
+    "part_number": "RC0603FR-0710KL",
+    "name": "10K Ohm Resistor 0603",
+    "description": "10K Ohm 1% 0.1W 0603 thick film chip resistor. AEC-Q200 qualified for automotive applications.",
+    "category": "Resistors",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "311-10.0KHRCT-ND", "price": 0.10, "lead_time": 2, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "RC0603FR-0710KL", "price": 0.08, "lead_time": 3, "moq": 10}
+    ]
+  },
+  {
+    "part_number": "GRM188R71H104KA93D",
+    "name": "100nF Ceramic Capacitor",
+    "description": "0.1uF 50V X7R 0603 ceramic capacitor. Murata GRM series MLCC.",
+    "category": "Capacitors",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "490-1532-1-ND", "price": 0.15, "lead_time": 2, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "81-GRM188R71H104KA3D", "price": 0.12, "lead_time": 2, "moq": 10}
+    ]
+  },
+  {
+    "part_number": "STM32F407VGT6",
+    "name": "STM32 Microcontroller",
+    "description": "ARM Cortex-M4 32-bit MCU, 1MB Flash, 192KB RAM, 168MHz, LQFP100",
+    "category": "Microcontrollers",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "497-11904-ND", "price": 12.50, "lead_time": 5, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "511-STM32F407VGT6", "price": 11.85, "lead_time": 7, "moq": 1},
+      {"supplier_code": "ARR", "supplier_pn": "STM32F407VGT6", "price": 12.00, "lead_time": 10, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "USB4110-GF-A",
+    "name": "USB-C Connector",
+    "description": "USB Type-C receptacle, 24 pin, SMT, right angle, 10Gbps USB 3.1",
+    "category": "Connectors",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "732-11593-1-ND", "price": 1.25, "lead_time": 3, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "523-USB4110-GF-A", "price": 1.18, "lead_time": 4, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "LM4029PS",
+    "name": "Power Supply Module",
+    "description": "5V 2A DC-DC converter module, 90% efficiency, wide input range 6-36V",
+    "category": "Power",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "LM4029PS-ND", "price": 8.50, "lead_time": 5, "moq": 1},
+      {"supplier_code": "NEW", "supplier_pn": "LM4029PS", "price": 8.75, "lead_time": 4, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "LM4029MC",
+    "name": "Memory Chip 4MB",
+    "description": "4MB SPI Flash memory, 133MHz, 8-SOIC package",
+    "category": "Memory",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "LM4029MC-ND", "price": 2.50, "lead_time": 3, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "LM4029MC", "price": 2.35, "lead_time": 4, "moq": 5}
+    ]
+  },
+  {
+    "part_number": "LM4029PH",
+    "name": "Printer Head Assembly",
+    "description": "Thermal printer head assembly, 384 dots, 8 dots/mm resolution",
+    "category": "Electromechanical",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "ARR", "supplier_pn": "LM4029PH-ARR", "price": 45.00, "lead_time": 14, "moq": 1},
+      {"supplier_code": "FUT", "supplier_pn": "LM4029PH", "price": 42.50, "lead_time": 10, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "LM4029SB",
+    "name": "System Board PCB",
+    "description": "Main system board PCB, 4-layer, FR4, 1.6mm thickness",
+    "category": "PCB",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "FUT", "supplier_pn": "LM4029SB-PCB", "price": 15.00, "lead_time": 21, "moq": 10}
+    ]
+  },
+  {
+    "part_number": "SN74LVC1G14",
+    "name": "Single Inverter Gate",
+    "description": "Single Schmitt-trigger inverter, SOT-23-5 package, 1.65-5.5V",
+    "category": "Logic ICs",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "296-11608-1-ND", "price": 0.35, "lead_time": 2, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "595-SN74LVC1G14DBV", "price": 0.32, "lead_time": 2, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "BLM18PG221SN1D",
+    "name": "Ferrite Bead 220 Ohm",
+    "description": "220 Ohm @ 100MHz ferrite bead, 0603, 1A rated current",
+    "category": "Inductors",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "490-1038-1-ND", "price": 0.08, "lead_time": 2, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "81-BLM18PG221SN1D", "price": 0.07, "lead_time": 3, "moq": 10}
+    ]
+  }
+]

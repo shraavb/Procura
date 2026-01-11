@@ -1,0 +1,62 @@
+[
+  {
+    "name": "IoT Sensor Board Rev 2.1",
+    "description": "WiFi-enabled environmental monitoring board with multiple sensors for industrial IoT applications",
+    "status": "active",
+    "processing_status": "completed",
+    "total_items": 14,
+    "matched_items": 14,
+    "total_cost": 89.45,
+    "items": [
+      {"line_number": 1, "part_number_raw": "STM32F407VGT6", "description_raw": "ARM Cortex-M4 Microcontroller", "quantity": 1, "status": "matched", "match_confidence": 0.98},
+      {"line_number": 2, "part_number_raw": "RC0603FR-0710KL", "description_raw": "10K Ohm Resistor 0603", "quantity": 25, "status": "matched", "match_confidence": 0.99},
+      {"line_number": 3, "part_number_raw": "GRM188R71H104KA93D", "description_raw": "100nF Ceramic Capacitor", "quantity": 30, "status": "matched", "match_confidence": 0.97},
+      {"line_number": 4, "part_number_raw": "USB4110-GF-A", "description_raw": "USB Type-C Connector", "quantity": 1, "status": "matched", "match_confidence": 0.95},
+      {"line_number": 5, "part_number_raw": "ESP32-WROOM-32E", "description_raw": "WiFi/BT Module", "quantity": 1, "status": "matched", "match_confidence": 0.96},
+      {"line_number": 6, "part_number_raw": "BME280", "description_raw": "Environmental Sensor", "quantity": 1, "status": "matched", "match_confidence": 0.94},
+      {"line_number": 7, "part_number_raw": "LM4029PS", "description_raw": "5V Power Module", "quantity": 1, "status": "matched", "match_confidence": 0.92}
+    ]
+  },
+  {
+    "name": "Motor Controller Board",
+    "description": "High-power BLDC motor controller for robotics and automation",
+    "status": "active",
+    "processing_status": "completed",
+    "total_items": 15,
+    "matched_items": 13,
+    "total_cost": 156.80,
+    "items": [
+      {"line_number": 1, "part_number_raw": "STM32G431RBT6", "description_raw": "Motor Control MCU", "quantity": 1, "status": "matched", "match_confidence": 0.97},
+      {"line_number": 2, "part_number_raw": "DRV8323RSRGZR", "description_raw": "3-Phase Gate Driver", "quantity": 1, "status": "matched", "match_confidence": 0.96},
+      {"line_number": 3, "part_number_raw": "CSD19536KCS", "description_raw": "Power MOSFET 100V", "quantity": 6, "status": "matched", "match_confidence": 0.95},
+      {"line_number": 4, "part_number_raw": "ACS712ELCTR-20A-T", "description_raw": "Current Sensor", "quantity": 3, "status": "matched", "match_confidence": 0.93},
+      {"line_number": 5, "part_number_raw": "CUSTOM-HEATSINK-01", "description_raw": "Custom Aluminum Heatsink", "quantity": 1, "status": "pending_review", "match_confidence": 0.45}
+    ]
+  },
+  {
+    "name": "Smart Thermostat v1.0",
+    "description": "WiFi-connected smart thermostat with display and voice control",
+    "status": "draft",
+    "processing_status": "pending",
+    "total_items": 18,
+    "matched_items": 0,
+    "total_cost": null,
+    "items": []
+  },
+  {
+    "name": "Industrial PLC Module",
+    "description": "Industrial-grade programmable logic controller module with Ethernet and fieldbus support",
+    "status": "active",
+    "processing_status": "matching",
+    "total_items": 20,
+    "matched_items": 16,
+    "total_cost": 285.50,
+    "items": [
+      {"line_number": 1, "part_number_raw": "STM32H743ZIT6", "description_raw": "High-Performance MCU", "quantity": 1, "status": "matched", "match_confidence": 0.98},
+      {"line_number": 2, "part_number_raw": "LAN8742A-CZ-TR", "description_raw": "Ethernet PHY", "quantity": 1, "status": "matched", "match_confidence": 0.97},
+      {"line_number": 3, "part_number_raw": "MAX485ESA+T", "description_raw": "RS-485 Transceiver", "quantity": 4, "status": "matched", "match_confidence": 0.96},
+      {"line_number": 4, "part_number_raw": "W25Q256JVEIQ", "description_raw": "256Mbit Flash", "quantity": 1, "status": "matched", "match_confidence": 0.95},
+      {"line_number": 5, "part_number_raw": "CUSTOM-ENCLOSURE", "description_raw": "DIN Rail Enclosure", "quantity": 1, "status": "pending_review", "match_confidence": 0.35}
+    ]
+  }
+]

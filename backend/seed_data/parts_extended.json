@@ -1,0 +1,201 @@
+[
+  {
+    "part_number": "ESP32-WROOM-32E",
+    "name": "ESP32 WiFi/BT Module",
+    "description": "WiFi and Bluetooth combo module, 4MB flash, PCB antenna, -40 to 85C",
+    "category": "Wireless Modules",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "1965-ESP32-WROOM-32E-ND", "price": 3.20, "lead_time": 3, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "356-ESP32WROOM32E", "price": 2.95, "lead_time": 5, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "BME280",
+    "name": "Environmental Sensor",
+    "description": "Digital humidity, pressure, and temperature sensor, I2C/SPI, LGA-8",
+    "category": "Sensors",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "828-1063-1-ND", "price": 4.50, "lead_time": 4, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "262-BME280", "price": 4.25, "lead_time": 5, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "AMS1117-3.3",
+    "name": "3.3V LDO Regulator",
+    "description": "1A low dropout linear regulator, 3.3V fixed output, SOT-223",
+    "category": "Power Management",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "AMS1117-3.3-ND", "price": 0.45, "lead_time": 2, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "AMS1117-3.3", "price": 0.38, "lead_time": 3, "moq": 10}
+    ]
+  },
+  {
+    "part_number": "LED0603-RED",
+    "name": "Red LED 0603",
+    "description": "Red LED, 0603 package, 2V forward, 20mA, 100mcd",
+    "category": "LEDs",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "160-1436-1-ND", "price": 0.12, "lead_time": 2, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "604-APT1608EC", "price": 0.10, "lead_time": 2, "moq": 10}
+    ]
+  },
+  {
+    "part_number": "CSTCE16M0V53-R0",
+    "name": "16MHz Ceramic Resonator",
+    "description": "16MHz ceramic resonator with built-in capacitors, SMD 3-pin",
+    "category": "Crystals",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "490-1198-1-ND", "price": 0.65, "lead_time": 3, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "81-CSTCE16M0V53-R0", "price": 0.58, "lead_time": 4, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "BAT54S",
+    "name": "Dual Schottky Diode",
+    "description": "Dual series Schottky barrier diode, 30V 200mA, SOT-23",
+    "category": "Diodes",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "BAT54S-FDICT-ND", "price": 0.18, "lead_time": 2, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "771-BAT54S-E3-08", "price": 0.15, "lead_time": 3, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "STM32G431RBT6",
+    "name": "STM32G4 Motor Control MCU",
+    "description": "ARM Cortex-M4 MCU, 170MHz, 128KB Flash, advanced motor control timers",
+    "category": "Microcontrollers",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "497-STM32G431RBT6-ND", "price": 6.85, "lead_time": 5, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "511-STM32G431RBT6", "price": 6.50, "lead_time": 7, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "DRV8323RSRGZR",
+    "name": "3-Phase Gate Driver",
+    "description": "Three-phase smart gate driver with integrated buck regulator, VQFN-40",
+    "category": "Motor Drivers",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "296-DRV8323RSRGZR-ND", "price": 4.25, "lead_time": 6, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "595-DRV8323RSRGZR", "price": 4.10, "lead_time": 7, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "CSD19536KCS",
+    "name": "N-Channel MOSFET 100V",
+    "description": "100V, 150A N-Channel NexFET Power MOSFET, TO-263-7, 2.4mOhm",
+    "category": "Transistors",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "296-CSD19536KCS-ND", "price": 3.85, "lead_time": 4, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "595-CSD19536KCS", "price": 3.65, "lead_time": 5, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "ACS712ELCTR-20A-T",
+    "name": "Current Sensor 20A",
+    "description": "Fully integrated Hall effect current sensor, 20A, 100mV/A, SOIC-8",
+    "category": "Sensors",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "620-1190-1-ND", "price": 5.20, "lead_time": 4, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "620-ACS712ELCTR20AT", "price": 4.95, "lead_time": 5, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "ESP32-S3-WROOM-1-N8R8",
+    "name": "ESP32-S3 WiFi/BLE Module",
+    "description": "ESP32-S3 module, 8MB Flash, 8MB PSRAM, AI acceleration",
+    "category": "Wireless Modules",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "1965-ESP32S3WROOM1N8R8-ND", "price": 4.50, "lead_time": 4, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "356-ESP32S3WRM1N8R8", "price": 4.25, "lead_time": 5, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "ILI9341",
+    "name": "2.4 TFT LCD Display Module",
+    "description": "2.4 inch TFT LCD display module, 240x320 resolution, SPI interface",
+    "category": "Displays",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "ILI9341-ND", "price": 12.50, "lead_time": 7, "moq": 1},
+      {"supplier_code": "ARR", "supplier_pn": "ILI9341-MOD", "price": 11.80, "lead_time": 10, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "BME680",
+    "name": "Gas Sensor Module",
+    "description": "Low power gas, pressure, temperature and humidity sensor",
+    "category": "Sensors",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "828-1077-1-ND", "price": 12.00, "lead_time": 5, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "262-BME680", "price": 11.50, "lead_time": 6, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "STM32H743ZIT6",
+    "name": "High-Performance MCU",
+    "description": "ARM Cortex-M7 480MHz, 2MB Flash, 1MB RAM, LQFP-144",
+    "category": "Microcontrollers",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "497-STM32H743ZIT6-ND", "price": 18.50, "lead_time": 8, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "511-STM32H743ZIT6", "price": 17.85, "lead_time": 10, "moq": 1},
+      {"supplier_code": "ARR", "supplier_pn": "STM32H743ZIT6", "price": 18.00, "lead_time": 12, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "LAN8742A-CZ-TR",
+    "name": "10/100 Ethernet PHY",
+    "description": "10/100 Base-TX/FX Ethernet transceiver, RMII, QFN-24",
+    "category": "Interface ICs",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "576-LAN8742A-CZ-TR-ND", "price": 2.85, "lead_time": 4, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "579-LAN8742A-CZ-TR", "price": 2.65, "lead_time": 5, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "MAX485ESA+T",
+    "name": "RS-485 Transceiver",
+    "description": "Low-power RS-485/RS-422 transceiver, slew-rate limited, SO-8",
+    "category": "Interface ICs",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "MAX485ESA+T-ND", "price": 2.15, "lead_time": 3, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "700-MAX485ESAT", "price": 1.95, "lead_time": 4, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "W25Q256JVEIQ",
+    "name": "256Mbit SPI Flash",
+    "description": "256Mbit (32MB) Quad SPI Flash, 133MHz, SOIC-16",
+    "category": "Memory",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "W25Q256JVEIQ-ND", "price": 4.50, "lead_time": 5, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "454-W25Q256JVEIQ", "price": 4.25, "lead_time": 6, "moq": 1}
+    ]
+  },
+  {
+    "part_number": "TPS54540DDAR",
+    "name": "5A Buck Regulator",
+    "description": "4.5V to 42V input, 5A synchronous step-down converter, SO PowerPAD-8",
+    "category": "Power Management",
+    "unit_of_measure": "EA",
+    "suppliers": [
+      {"supplier_code": "DK", "supplier_pn": "296-TPS54540DDAR-ND", "price": 3.25, "lead_time": 4, "moq": 1},
+      {"supplier_code": "MOU", "supplier_pn": "595-TPS54540DDAR", "price": 3.10, "lead_time": 5, "moq": 1}
+    ]
+  }
+]

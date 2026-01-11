@@ -51,6 +51,14 @@ async def lifespan(app: FastAPI):
     try:
         await init_db()
         logger.info("Database initialized")
+
+        # Auto-seed demo data if database is empty
+        from seed_db import seed_database
+        try:
+            seed_database()
+            logger.info("Database seeded with demo data")
+        except Exception as e:
+            logger.warning(f"Seeding skipped or failed: {e}")
     except Exception as e:
         logger.error(f"Database initialization failed: {e}")
         raise
