@@ -106,9 +106,19 @@ class Settings(BaseSettings):
     @field_validator("database_url")
     @classmethod
     def validate_database_url(cls, v: str) -> str:
-        """Ensure async driver is used."""
+        """Ensure async driver is used and SSL is configured for production."""
+        import os
+
+        # Convert to async driver
         if v.startswith("postgresql://"):
-            return v.replace("postgresql://", "postgresql+asyncpg://")
+            v = v.replace("postgresql://", "postgresql+asyncpg://")
+
+        # Add SSL mode for Render/production (external PostgreSQL)
+        if "render.com" in v or os.getenv("ENVIRONMENT") == "production":
+            if "sslmode=" not in v:
+                separator = "&" if "?" in v else "?"
+                v = f"{v}{separator}ssl=require"
+
         return v
 
     @field_validator("workers")
@@ -129,7 +139,10 @@ class Settings(BaseSettings):
     @property
     def sync_database_url(self) -> str:
         """Get synchronous database URL for migrations."""
-        return self.database_url.replace("+asyncpg", "+psycopg")
+        url = self.database_url.replace("+asyncpg", "+psycopg")
+        # psycopg uses sslmode instead of ssl
+        url = url.replace("ssl=require", "sslmode=require")
+        return url
 
 
 @lru_cache
