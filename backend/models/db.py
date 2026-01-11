@@ -2,6 +2,8 @@
 Async database session management.
 Production-ready with connection pooling and health checks.
 """
+import os
+import ssl
 from contextlib import asynccontextmanager, contextmanager
 from typing import AsyncGenerator
 
@@ -18,6 +20,14 @@ from models.database import Base
 
 settings = get_settings()
 
+# Determine if we need SSL (production/Render)
+_is_production = os.getenv("ENVIRONMENT") == "production" or "render.com" in settings.database_url
+
+# SSL configuration for asyncpg
+_async_connect_args = {}
+if _is_production:
+    _async_connect_args["ssl"] = "require"
+
 # Async engine for production use
 async_engine = create_async_engine(
     settings.database_url,
@@ -26,6 +36,7 @@ async_engine = create_async_engine(
     pool_pre_ping=settings.db_pool_pre_ping,
     pool_recycle=settings.db_pool_recycle,
     echo=settings.debug,
+    connect_args=_async_connect_args,
 )
 
 # Async session factory
@@ -37,10 +48,16 @@ AsyncSessionLocal = async_sessionmaker(
     autoflush=False,
 )
 
+# SSL configuration for psycopg2/psycopg (sync)
+_sync_connect_args = {}
+if _is_production:
+    _sync_connect_args["sslmode"] = "require"
+
 # Sync engine for migrations and seeding
 sync_engine = create_engine(
     settings.sync_database_url,
     pool_pre_ping=True,
+    connect_args=_sync_connect_args,
 )
 
 SyncSessionLocal = sessionmaker(
